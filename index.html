@@ -13,18 +13,35 @@
         <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
     </head>
     <body>
+        <!-- This is header side --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <header>
-            <!-- <img class="logo" src="./assets/images/logo.png" alt="logo photo"> -->
-            <h2 class="title">Essential Library</h2>
-            <nav class="navigation">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Books</a>
-                <a href="#">Contact</a>
-                <a href="#">Privacy Policy</a>
-                <button class="btn-login" >Login</button>
-            </nav>
+            <div class="logo">
+                <img class="logo-radius" src="./assets/images/logo.png" alt="Library Logo">
+                <span>Essential Library</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search books, authors, ISBN...">
+                <button onclick="searchBooks()">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <button class="btn-login">Login</button>
+            <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
         </header>
+
+        <!-- Sidebar Navigation (Initially Hidden) -->
+        <nav id="side-nav" class="side-nav">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-book"></i>Books</a></li>
+                <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
+            </ul>
+            <button class="close-btn" onclick="toggleMenu()">Close</button>
+        </nav>
        
             <div class="wrapper" >
                 <span class="icon-close">

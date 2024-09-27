@@ -57,3 +57,21 @@ signIn.addEventListener('submit', function(event) {
     }
     document.getElementById('signinForm').reset();
 });
+
+
+// Toggle the side navigation
+function toggleMenu() {
+    const sideNav = document.getElementById('side-nav');
+    const mainContent = document.getElementById('main-content');
+
+    // Check if the sidebar is open
+    if (sideNav.classList.contains('side-nav-open')) {
+        // Hide the sidebar by removing the open class
+        sideNav.classList.remove('side-nav-open');
+        mainContent.classList.remove('main-content-open');
+    } else {
+        // Show the sidebar by adding the open class
+        sideNav.classList.add('side-nav-open');
+        mainContent.classList.add('main-content-open');
+    }
+}

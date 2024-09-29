@@ -168,6 +168,11 @@ header {
     vertical-align: middle; 
 }
 
+/* Book types list hidden */
+.hidden {
+    display: none;
+}
+
 /* Close button styling */
 .close-btn {
     bottom: 20px;

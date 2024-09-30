@@ -167,7 +167,10 @@ header {
     font-size: 1.2rem;  
     vertical-align: middle; 
 }
-
+/* Book types list hidden */
+.hidden {
+    display: none;
+}
 /* Close button styling */
 .close-btn {
     bottom: 20px;

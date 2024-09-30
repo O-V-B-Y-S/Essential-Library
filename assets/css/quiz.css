@@ -1,0 +1,150 @@
+:root {
+    --primary-color:#fff;
+    --secondary-color:#000;
+    --first:#d1e7dd;
+    --second:#055160;
+    --third:#cdcde6;
+    --four:#b4eed4;
+    --primary-color:rgb(12, 12, 12);
+    --card-border-redius: 7px;
+    --card-title-color: rgb(23, 148, 19);
+    --card-category-color: seagreen;
+    --login-signup-color: #162938;
+    --first-color: #d1e7dd;
+    --second-color: #ced4da;
+    --three-color: #9f9dba;
+    --four-color: #6e4c6c;
+    --five-color: #7f678e;
+    --six-color: #198754;
+    --seven-color: #6f42c7;
+    --eight-color: #664d03;
+    --nine-color: #055160;
+    --ten-color: #969faf;
+    --eleven-color: #cdcde6;
+    --border-radius: 10px;
+}
+.mmm{
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+#start-container{
+    background-color: var(--card-category-color);
+    font-size: 2rem;
+    padding: 5% 15%;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5% auto;
+}
+.mmm #start-container h2 {
+    padding-bottom: 5%;
+  }
+
+
+button {
+    background-color: var(--secondary-bg-color);
+    color: whitesmoke;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+  }
+  input {
+    padding: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+  }
+  .quiz-container {
+    /* height: 100vh; */
+    background-color: var(--login-signup-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    position: relative;
+    top: 10%;
+    transform: translateY(-5%);
+    text-align: center;
+    width: 100%;
+    max-width: 90%; /* Adjust as needed */
+    margin: auto;
+    padding: 40px;
+    color: var(--eight-color);
+  }
+  
+  #timer {
+    font-size: 24px;
+    margin-bottom: 5%;
+    color: var(--eight-color);
+  }
+  #question {
+    font-size: 1.3rem;
+    /* font-weight: bold; */
+    background-color: var(--primary-bg-color);
+    color: var(--tertiary-color);
+    padding: 3%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+  }
+  
+  .options {
+    margin-bottom: 4%;
+    text-align: left;
+  }
+  .option {
+    margin-bottom: 15px;
+  }
+  
+  #feedback {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgba(16, 96, 43, 0.869);
+    margin-top: 5%;
+  }
+  #result-container {
+    text-align: center;
+    background-color: var(--four-color);
+    width: 70%;
+    border-radius: var(--border-radius);
+  }
+  #result-container h2 {
+    font-size: 1.2rem;
+    color: rgb(156, 5, 156);
+    background-color: rgb(233, 217, 196);
+    padding: 35px;
+    border-radius: 10px;
+  }
+  #result {
+    font-size: 1.2rem;
+    margin-top: 10%;
+    line-height: 2.5;
+    color: var(--four);
+  }
+  .pass {
+    color: green;
+  }
+  .fail {
+    color: red;
+  }
+  #test-again {
+    margin-top: 20px;
+    background-color: var(--eleven-color);
+  }
+  
+  #next-question {
+    margin-top: 20px;
+  }
+  
+  /* CSS for increasing radio button size */
+  input[type="radio"] {
+    transform: scale(1.9); /* Adjust the scale factor as needed */
+    background-color: var(--six-color);
+    margin-right: 10px; /* Adjust the spacing between radio buttons */
+  }
+  
+  /* CSS for spacing between radio buttons and text */
+  .options label {
+    margin-left: 20px; /* Adjust the spacing between radio buttons and text */
+  }
+  
+  

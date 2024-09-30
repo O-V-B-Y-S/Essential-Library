@@ -12,7 +12,6 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/eg.css">
-    <link rel="stylesheet" href="./assets/css/quiz.css">
         <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
 </head>
 <body>
@@ -36,7 +35,7 @@
       <!-- Sidebar Navigation (Initially Hidden) -->
       <nav id="side-nav" class="side-nav">
           <ul>
-              <li><a href="./main.html"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
               <li><a href="#"><i class="fas fa-book"></i>Books</a></li>
               <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
               <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
@@ -45,35 +44,9 @@
           </ul>
           <button class="close-btn" onclick="toggleMenu()">Close</button>
       </nav>
-      
       <section class="mmm">
-        <div id="start-container">
-            <h2>Welcome to the Quiz!</h2>
-            <input
-              type="text"
-              id="username"
-              placeholder="Enter your name"
-              onfocus="clearPlaceholder(this)"/>
-            <button onclick="startQuiz()">Start Quiz</button>
-        </div>
-      
-          <div class="quiz-container" id="quiz-container" style="display: none">
-            <div id="timer">Time Left: <span id="time">36</span> seconds</div>
-            <div id="question"></div>
-            <div class="options"></div>
-            <button id="next-question" onclick="checkAnswer()">Submit</button>
-            <div id="feedback"></div>
-          </div>
-      
-          <div id="result-container" style="display: none">
-            <h2>Quiz Result</h2>
-            <div id="result"></div>
-            <button id="test-again" onclick="testAgain()">Test Again</button>
-          </div>
+
       </section>
-
-
-
         <section class="card-container">
             <article class="card">
                     <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
@@ -219,6 +192,5 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="./assets/js/script.js"></script>
-        <script src="./assets/js/quiz.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/eg.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/quiz.css">
         <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
 </head>
@@ -35,16 +35,27 @@
 
       <!-- Sidebar Navigation (Initially Hidden) -->
       <nav id="side-nav" class="side-nav">
-          <ul>
-              <li><a href="./main.html"><i class="fas fa-home"></i>Home</a></li>
-              <li><a href="#"><i class="fas fa-book"></i>Books</a></li>
-              <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
-              <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
-              <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-              <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
-          </ul>
-          <button class="close-btn" onclick="toggleMenu()">Close</button>
-      </nav>
+        <ul>
+            <li><a href="./index.html"><i class="fas fa-home"></i>Home</a></li>
+            <li>
+                <a href="#" onclick="showBookTypes()">
+                    <i class="fas fa-book"></i>Books
+                </a>
+                <ul id="book-types" class="book-types hidden">
+                    <li><a href="./assets/books-pages/dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
+                    <li><a href="./assets/books-pages/suta.html"><i class="fa-solid fa-book-open"></i></i>Suta</a></li>
+                    <li><a href="./assets/books-pages/yata.html"><i class="fa-solid fa-book-open-reader"></i>Yata</a></li>
+                    <li><a href="./assets/books-pages/english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
+                    <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader">Poem</i></a></li>
+                </ul>
+            </li>           
+            <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()">Close</button>
+    </nav>
       
       <section class="mmm">
         <div id="start-container">
@@ -80,7 +91,7 @@
                     <div class="card-body">
                         <span class="card-category">Book Name</span>
                         <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                         <div class="post">
                             <div class="card-author">
                                 <a href="./assets/book/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.pdf"><button class="btn">Read Book</button></a>
@@ -90,14 +101,14 @@
                     </div>
             </article>
             <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+                    <img src="./assets/images/ဆန်းကျော်စွာဝင်း-ကဗျာများ.jpg" alt="baking cake image" class="card-img">
                     <div class="card-body">
                         <span class="card-category">Book Name</span>
                         <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                         <div class="post">
                             <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
+                                <a href="./assets/book/ဆန်းကျော်စွာဝင်း-ကဗျာများ(1).pdf"><button class="btn">Read Book</button></a>
                             </div>
                             <time class="card-date" datetime="">July, 9 2024</time>
                         </div>
@@ -108,7 +119,7 @@
                 <div class="card-body">
                     <span class="card-category">Book Name</span>
                     <h2 class="card-title">WRITER</h2>
-                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                     <div class="post">
                         <div class="card-author">
                             <a href=""><button class="btn">Read Book</button></a>
@@ -122,7 +133,7 @@
                     <div class="card-body">
                         <span class="card-category">Book Name</span>
                         <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                         <div class="post">
                             <div class="card-author">
                                 <a href=""><button class="btn">Read Book</button></a>
@@ -136,7 +147,7 @@
                 <div class="card-body">
                     <span class="card-category">Book Name</span>
                     <h2 class="card-title">WRITER</h2>
-                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                     <div class="post">
                         <div class="card-author">
                             <a href=""><button class="btn">Read Book</button></a>
@@ -150,7 +161,7 @@
                     <div class="card-body">
                         <span class="card-category">Book Name</span>
                         <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                         <div class="post">
                             <div class="card-author">
                                 <a href=""><button class="btn">Read Book</button></a>
@@ -164,7 +175,7 @@
                 <div class="card-body">
                     <span class="card-category">Book Name</span>
                     <h2 class="card-title">WRITER</h2>
-                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                     <div class="post">
                         <div class="card-author">
                             <a href=""><button class="btn">Read Book</button></a>
@@ -178,7 +189,7 @@
                     <div class="card-body">
                         <span class="card-category">Book Name</span>
                         <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus est totam quas ea incidunt officiis eligendi quasi nesciunt tenetur veritatis. Lorem ipsum dolor sit amet consectetur adipisicing.  Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
                         <div class="post">
                             <div class="card-author">
                                 <a href=""><button class="btn">Read Book</button></a>
@@ -207,7 +218,7 @@
     <script>
         document.getElementById('logoutBtn').addEventListener('click',()=>{
             localStorage.clear();
-            window.location.href='index.html';
+            window.location.href='./index.html';
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

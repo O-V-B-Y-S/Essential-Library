@@ -89,9 +89,7 @@ function toggleMenu() {
     if (mainContent) {
         mainContent.classList.add('main-content-open');
     }
-}
-
-}
+}};
 // Toggle the visibility of book types
 function showBookTypes(event) {
     event.preventDefault();  // Prevent default anchor behavior

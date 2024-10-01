@@ -38,12 +38,12 @@
                     <a href="#" onclick="showBookTypes()">
                         <i class="fas fa-book"></i>Books
                     </a>
-                    <ul id="book-types" class="book-types hidden">
+                    <ul id="book-types" class="hidden">
                         <li><a href="./assets/books-pages/dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
                         <li><a href="./assets/books-pages/suta.html"><i class="fa-solid fa-book-open"></i></i>Suta</a></li>
                         <li><a href="./assets/books-pages/yata.html"><i class="fa-solid fa-book-open-reader"></i>Yata</a></li>
                         <li><a href="./assets/books-pages/english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
-                        <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader">Poem</i></a></li>
+                        <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
                     </ul>
                 </li>                      
                 <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
@@ -57,57 +57,60 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem ad quam est impedit debitis accusamus deleniti et molestiae minima quos non, aut reprehenderit, magnam minus ratione nulla, nemo quidem?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem ad quam est impedit debitis accusamus deleniti et molestiae minima quos non, aut reprehenderit, magnam minus ratione nulla, nemo quidem?</p>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem ad quam est impedit debitis accusamus deleniti et molestiae minima quos non, aut reprehenderit, magnam minus ratione nulla, nemo quidem?Lorem ipsum dolor sit amet consectetur adipisicing elit. In obcaecati pariatur dolores dignissimos ipsa velit, fugiat eius, non deleniti distinctio maxime sint impedit ea necessitatibus illum porro? Debitis, doloribus corrupti?Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem facere sit sequi impedit placeat eos quasi, nihil reprehenderit? Aspernatur facere pariatur fuga voluptate dicta quo autem accusamus, aliquam eligendi asperiores.lorem</p>
-            <!-- login/signup form -->
-            <div class="wrapper" >
-                <span class="icon-close">
-                    <ion-icon name="close"></ion-icon>        
-                </span>
-                <div class="form-box login">
-                    <h2>Login</h2>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="email" id="signinEmail" required>
-                            <label >Email</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" id="signinPassword" required>
-                            <label >Password</label>
-                            <button type="submit" class="btnn" id="signinForm">Login</button>
-                            <div class="login-register">
-                                <p>Don't have an account?<a href="" class="register-link" >Register</a></p>
+
+            <section class="log">
+                <!-- login/signup form -->
+                <div class="wrapper" >
+                    <span class="icon-close">
+                        <ion-icon name="close"></ion-icon>        
+                    </span>
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="email" id="signinEmail" required>
+                                <label >Email</label>
                             </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="form-box register">
-                    <h2>Registration</h2>
-                    <form action="#">
-                        <div class="input-box">
-                            <span class="icon">
-                                <ion-icon name="person"></ion-icon>                    
-                            </span>
-                            <input type="text" id="signupUsername" required>
-                            <label >Username</label>
-                        </div>  
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                            <input type="email" id="signupEmail" required>
-                            <label >Email</label>
-                        </div>
-                        <div class="input-box">
-                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                            <input type="password" id="signupPassword" required>
-                            <label >Password</label>
-                            <button type="submit" class="btnn" id="signupForm">Register</button>
-                            <div class="login-register">
-                                <p>Already have an account?<a href="" class="login-link">login</a></p>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" id="signinPassword" required>
+                                <label >Password</label>
+                                <button type="submit" class="btnn" id="signinForm">Login</button>
+                                <div class="login-register">
+                                    <p>Don't have an account?<a href="" class="register-link" >Register</a></p>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
+                    <div class="form-box register">
+                        <h2>Registration</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon">
+                                    <ion-icon name="person"></ion-icon>                    
+                                </span>
+                                <input type="text" id="signupUsername" required>
+                                <label >Username</label>
+                            </div>  
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="email" id="signupEmail" required>
+                                <label >Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" id="signupPassword" required>
+                                <label >Password</label>
+                                <button type="submit" class="btnn" id="signupForm">Register</button>
+                                <div class="login-register">
+                                    <p>Already have an account?<a href="" class="login-link">login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </div>
+        </section>
          <!-- Footer -->
          <footer>
             <div class="footer-content">

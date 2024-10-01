@@ -33,7 +33,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-position: center;
+}
 header {
     background-image: url('../images/Slay.jpeg'); 
     background-size: cover;

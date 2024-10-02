@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search Autocomplete</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+
+    <label for="book">Search for a Book: </label>
+    <input id="book" type="text">
+    <button id="search-btn">Search</button>
+
+    <script>
+      // List of books by author or title
+      var books = [
+        { label: "To Kill a Mockingbird", url: "https://example.com/to-kill-a-mockingbird" },
+        { label: "1984", url: "https://example.com/1984" },
+        { label: "The Great Gatsby", url: "https://example.com/the-great-gatsby" },
+        { label: "Moby Dick", url: "https://example.com/moby-dick" },
+        { label: "Pride and Prejudice", url: "https://example.com/pride-and-prejudice" }
+      ];
+
+      var selectedBookUrl = "";
+
+      // Initialize autocomplete
+      $(function() {
+        $("#book").autocomplete({
+          source: books,   // Use book list for autocomplete
+          minLength: 2,    // Minimum characters to trigger suggestions
+          select: function(event, ui) {   // When an item is selected
+            selectedBookUrl = ui.item.url;  // Store the URL of the selected book
+          }
+        });
+
+        // Search button click event
+        $("#search-btn").click(function() {
+          if (selectedBookUrl) {
+            window.location.href = selectedBookUrl;  // Navigate to the selected book's URL
+          } else {
+            alert("Please select a book from the list.");
+          }
+        });
+      });
+    </script>
+
+</body>
+</html>

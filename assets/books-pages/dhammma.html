@@ -8,167 +8,197 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" 
+    />
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/main.css">
         <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
 </head>
 <body>
-       <!-- This is header side --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-       <header>
+    <!-- This is header side -->
+    <header>
         <div class="logo">
             <img class="logo-radius" src="../images/logo.png" alt="Library Logo">
             <span>Essential Library</span>
         </div>
-        <div class="search-bar">
+        <!-- <div class="search-bar">
             <input type="text" id="search" placeholder="Search books, authors, ISBN...">
             <button onclick="searchBooks()">
                 <i class="fas fa-search"></i>
             </button>
-        </div>
+        </div> -->
 
         <button class="btn-login" id="logoutBtn">Logout</button>
         <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
-       </header>
+    </header>
 
-      <!-- Sidebar Navigation (Initially Hidden) -->
-      <nav id="side-nav" class="side-nav">
-          <ul>
-              <li><a href="../../main.html"><i class="fas fa-home"></i>Home</a></li>
-              <li>
-                <a href="#" onclick="showBookTypes()">
-                    <i class="fas fa-book"></i>Books
-                </a>
-                <ul id="book-types" class="book-types hidden">
-                    <li><a href="./dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
-                    <li><a href="./suta-reta.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
-                    <li><a href="./english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
-                    <li><a href="./poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
-                </ul>
-                </li>
-              <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
-              <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
-              <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-              <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
-          </ul>
-          <button class="close-btn" onclick="toggleMenu()">Close</button>
-      </nav>
-      <section class="mmm">
+    <!-- Sidebar Navigation (Initially Hidden) -->
+    <nav id="side-nav" class="side-nav">
+        <ul>
+          <li><a href="../../main.html"><i class="fas fa-home"></i>Home</a></li>
+          <li>
+            <a href="#" onclick="showBookTypes()">
+                <i class="fas fa-book"></i>Books
+            </a>
+            <ul id="book-types" class="book-types hidden">
+                <li><a href="./dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
+                <li><a href="./suta-ratha.html"><i class="fa-solid fa-book-open"></i>Suta and Ratha</a></li>
+                <li><a href="./english.html"><i class="fa-solid fa-book-open"></i>English</a></li>
+                <li><a href="./poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
+            </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()">Close</button>
+    </nav>
+    <!-- <section class="mmm"> -->
 
-        <section class="card-container">
-            <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href="./assets/book/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.pdf"><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
-                        </div>
+    <section class="card-container">
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href="./assets/book/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.pdf"><button class="btn">Read Book</button></a>
                     </div>
-            </article>
-            <article class="card">
-                    <img src="./assets/images/ဆန်းကျော်စွာဝင်း-ကဗျာများ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href="./assets/book/ဆန်းကျော်စွာဝင်း-ကဗျာများ(1).pdf"><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
-                        </div>
-                    </div>
-            </article>
-            <article class="card">
-                <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                <div class="card-body">
-                    <span class="card-category">Book Name</span>
-                    <h2 class="card-title">WRITER</h2>
-                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                    <div class="post">
-                        <div class="card-author">
-                            <a href=""><button class="btn">Read Book</button></a>
-                        </div>
-                        <time class="card-date" datetime="">July, 9 2024</time>
-                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
                 </div>
-            </article>
-            <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
-                        </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဆန်းကျော်စွာဝင်း-ကဗျာများ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href="./assets/book/ဆန်းကျော်စွာဝင်း-ကဗျာများ(1).pdf"><button class="btn">Read Book</button></a>
                     </div>
-            </article>
-            <article class="card">
-                <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                <div class="card-body">
-                    <span class="card-category">Book Name</span>
-                    <h2 class="card-title">WRITER</h2>
-                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                    <div class="post">
-                        <div class="card-author">
-                            <a href=""><button class="btn">Read Book</button></a>
-                        </div>
-                        <time class="card-date" datetime="">July, 9 2024</time>
-                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
                 </div>
-            </article>
-            <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
-                        </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
                     </div>
-            </article>
-            <article class="card">
-                <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                <div class="card-body">
-                    <span class="card-category">Book Name</span>
-                    <h2 class="card-title">WRITER</h2>
-                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                    <div class="post">
-                        <div class="card-author">
-                            <a href=""><button class="btn">Read Book</button></a>
-                        </div>
-                        <time class="card-date" datetime="">July, 9 2024</time>
-                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
                 </div>
-            </article>
-            <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
-                        </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
                     </div>
-            </article>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
+                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
+                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
+                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
+                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
+                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
+        <article class="card">
+            <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+            <div class="card-body">
+                <span class="card-category">Book Name</span>
+                <h2 class="card-title">WRITER</h2>
+                <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                <div class="post">
+                    <div class="card-author">
+                        <a href=""><button class="btn">Read Book</button></a>
+                    </div>
+                    <time class="card-date" datetime="">July, 9 2024</time>
+                </div>
+            </div>
+        </article>
     </section>
         
     <!-- Footer -->

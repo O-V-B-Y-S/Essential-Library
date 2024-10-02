@@ -35,3 +35,36 @@ document.addEventListener('DOMContentLoaded', function() {
     const booksMenu = document.querySelector('[onclick="showBookTypes()"]');
     booksMenu.addEventListener('click', showBookTypes);
 });
+
+
+
+
+// readMore function
+
+function readMore(){
+    var btnText=this;
+    var es=btnText.previousElementSibling;
+
+    if(es.style.display==="none" || es.style.display===""){
+        es.style.display="inline";
+        btnText.innerHTML="ReadLess"
+        btnText.style.color="green"
+    }
+    else{
+        es.style.display="none";
+        btnText.innerHTML="ReadMore"
+        btnText.style.color="red"
+    }
+};
+window.onload = function () {
+    var moreTexts = document.querySelectorAll(".moreText");
+    var readMoreBtns = document.querySelectorAll(".readMore");
+
+    moreTexts.forEach(function (moreText) {
+      moreText.style.display = "none";
+    });
+
+    readMoreBtns.forEach(function (btn) {
+      btn.addEventListener("click", readMore);
+    });
+  };

@@ -470,3 +470,7 @@ footer {
     text-decoration: underline;
 }/* login/sign up */
 
+/* readmore */
+.readMore{
+    cursor: pointer;
+}

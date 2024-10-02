@@ -35,15 +35,14 @@
       <!-- Sidebar Navigation (Initially Hidden) -->
       <nav id="side-nav" class="side-nav">
           <ul>
-              <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="../../main.html"><i class="fas fa-home"></i>Home</a></li>
               <li>
                 <a href="#" onclick="showBookTypes()">
                     <i class="fas fa-book"></i>Books
                 </a>
                 <ul id="book-types" class="book-types hidden">
                     <li><a href="./dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
-                    <li><a href="./suta.html"><i class="fa-solid fa-book-open"></i></i>Sutra</a></li>
-                    <li><a href="./yata.html"><i class="fa-solid fa-book-open-reader"></i>Rata</a></li>
+                    <li><a href="./suta-reta.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
                     <li><a href="./english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
                     <li><a href="./poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
                 </ul>
@@ -190,7 +189,7 @@
     <script>
         document.getElementById('logoutBtn').addEventListener('click',()=>{
             localStorage.clear();
-            window.location.href='index.html';
+            window.location.href='../../index.html';
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

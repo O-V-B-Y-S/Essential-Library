@@ -48,12 +48,12 @@ function readMore(){
     if(es.style.display==="none" || es.style.display===""){
         es.style.display="inline";
         btnText.innerHTML="ReadLess"
-        btnText.style.color="green"
+        btnText.style.color="brown"
     }
     else{
         es.style.display="none";
         btnText.innerHTML="ReadMore"
-        btnText.style.color="red"
+        btnText.style.color=""
     }
 };
 window.onload = function () {

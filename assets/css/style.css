@@ -37,7 +37,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 600px;
     background-position: center;
 }
 header {
@@ -491,7 +491,10 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
-
+/* page-name */
+.page-name{
+    color: var(--first);
+}
 
 
 

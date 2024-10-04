@@ -4,7 +4,7 @@ const registerLink = document.querySelector('.register-link');
 const loginLink=document.querySelector('.login-link');
 const btnPopUp=document.querySelector('.btn-login');
 const closeBtn=document.querySelector('.icon-close')
-
+const log=document.querySelector('.log');
 // registerLink.addEventListener('click', function(event) {
 //     event.preventDefault();  
 //     wrapper.classList.add('active'); 
@@ -18,12 +18,15 @@ registerLink.addEventListener('click', function(event) {
     wrapper.classList.add('active'); 
 });
 btnPopUp.addEventListener('click', function(event) {
-    event.preventDefault();  
+    event.preventDefault(); 
+    log.style.display="flex" 
+    // log.style.align.item="center";
     wrapper.classList.add('active-popup'); 
 });
 closeBtn.addEventListener('click', function(event) {
     event.preventDefault();  
     wrapper.classList.remove('active-popup'); 
+    log.style.display="none"
 });
 
 

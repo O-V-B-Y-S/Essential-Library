@@ -4,8 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .log {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        /* Modal content */
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+        }
+        
+        /* Close button */
+        .icon-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        /* Basic styles for input fields and button */
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    
+    <button class="btn-login">Login</button>
+
+     <!-- Login form section (modal) -->
+     <div class="log">
+        <div class="modal-content">
+            <span class="icon-close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Show modal when login button is clicked
+document.querySelector('.btn-login').addEventListener('click', () => {
+    document.querySelector('.log').style.display = 'flex';  // Show the modal with flexbox
+});
+
+// Hide modal when close icon is clicked
+document.querySelector('.icon-close').addEventListener('click', () => {
+    document.querySelector('.log').style.display = 'none';  // Hide the modal
+});
+
+// Optionally, hide modal when user clicks outside the modal content
+window.addEventListener('click', (event) => {
+    const modal = document.querySelector('.log');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+    </script>
 </body>
 </html>

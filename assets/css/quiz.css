@@ -26,7 +26,7 @@
 .mmm{
     display: flex;
     justify-content: center;
-    align-items: last baseline;
+    align-items: last center;
 }
 
 #start-container{

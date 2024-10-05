@@ -1,85 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhamma</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/main.css">
-        <!-- <link rel="stylesheet" href="./assets/css/main.css"> -->
-</head>
-<body>
-       <!-- This is header side --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-       <header>
-        <div class="logo">
-            <img class="logo-radius" src="../images/logo.png" alt="Library Logo">
-            <span>Essential Library</span>
-        </div>
-        <h2 class="page-name">Medicine</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dhamma</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <!-- This is header side -->
+        <header>
+            <div class="logo">
+                <img class="logo-radius" src="../images/logo.png" alt="Library Logo">
+                <h1><i class="fa-solid fa-book"></i> Essential Library</h1>
+            </div>
+            <h2 class="page-name">Medicine</h2>
 
-        <button class="btn-login" id="logoutBtn">Logout</button>
-        <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
-       </header>
+            <button class="btn-login" id="logoutBtn">Logout</button>
+            <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
+        </header>
 
-      <!-- Sidebar Navigation (Initially Hidden) -->
-      <nav id="side-nav" class="side-nav">
-          <ul>
-              <li><a href="../../main.html"><i class="fas fa-home"></i>Home</a></li>
-              <li>
-                <a href="#" onclick="showBookTypes()">
-                    <i class="fas fa-book"></i>Books
-                </a>
-                <ul id="book-types" class="book-types hidden">
-                    <li><a href="./dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
-                    <li><a href="./suta-ratha.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
-                    <li><a href="./english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
-                    <li><a href="./poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
-                    <li><a href="./medicine.html"><i class="fa-solid fa-book-open-reader"></i>Medicine</a></li>
-                </ul>
+        <!-- Sidebar Navigation (Initially Hidden) -->
+        <nav id="side-nav" class="side-nav">
+            <ul>
+                <li><a href="../../main.html"><i class="fas fa-home"></i>Home</a></li>
+                <li>
+                    <a href="#" onclick="showBookTypes()">
+                        <i class="fas fa-book"></i>Books
+                    </a>
+                    <ul id="book-types" class="book-types hidden">
+                        <li><a href="./dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
+                        <li><a href="./suta-ratha.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
+                        <li><a href="./english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
+                        <li><a href="./poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
+                        <li><a href="./medicine.html"><i class="fa-solid fa-book-open-reader"></i>Medicine</a></li>
+                    </ul>
                 </li>
-              <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
-              <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
-              <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-              <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
-          </ul>
-          <button class="close-btn" onclick="toggleMenu()">Close</button>
-      </nav>
-      <section class="mmm">
+                <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+                <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
+            </ul>
+            <button class="close-btn" onclick="toggleMenu()">Close</button>
+        </nav>
+        <section class="mmm">
 
         <section class="card-container">
             <article class="card">
-                    <img src="../book/suta-and-ratha/image/ချမ်းမြေ့ဝင်း-စကာဝါ-အခန်းဆက် ဝတ္ထူရှည်.jpg အခန်းဆက် ဝတ္တုရှည်.pdf" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href="../book/suta-and-ratha/book/ချမ်းမြေ့ဝင်း-စကားဝါ အခန်းဆက် ဝတ္တုရှည်.pdf"><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
+                <img src="../book/suta-and-ratha/image/ချမ်းမြေ့ဝင်း-စကာဝါ-အခန်းဆက် ဝတ္ထူရှည်.jpg အခန်းဆက် ဝတ္တုရှည်.pdf" alt="baking cake image" class="card-img">
+                <div class="card-body">
+                    <span class="card-category">Book Name</span>
+                    <h2 class="card-title">WRITER</h2>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                    <div class="post">
+                        <div class="card-author">
+                            <a href="../book/suta-and-ratha/book/ချမ်းမြေ့ဝင်း-စကားဝါ အခန်းဆက် ဝတ္တုရှည်.pdf"><button class="btn">Read Book</button></a>
                         </div>
+                        <time class="card-date" datetime="">July, 9 2024</time>
                     </div>
+                </div>
             </article>
             <article class="card">
-                    <img src="../book/suta-and-ratha/image/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href="../book/suta-and-ratha/book/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.pdf"><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
+                <img src="../book/suta-and-ratha/image/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+                <div class="card-body">
+                    <span class="card-category">Book Name</span>
+                    <h2 class="card-title">WRITER</h2>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                    <div class="post">
+                        <div class="card-author">
+                            <a href="../book/suta-and-ratha/book/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.pdf"><button class="btn">Read Book</button></a>
                         </div>
+                        <time class="card-date" datetime="">July, 9 2024</time>
                     </div>
+                </div>
             </article>
             <article class="card">
                 <img src="../book/suta-and-ratha/image/ဂျူး-အမှတ်တရ.jpg" alt="baking cake image" class="card-img">
@@ -96,18 +96,18 @@
                 </div>
             </article>
             <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
+                <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+                <div class="card-body">
+                    <span class="card-category">Book Name</span>
+                    <h2 class="card-title">WRITER</h2>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                    <div class="post">
+                        <div class="card-author">
+                            <a href=""><button class="btn">Read Book</button></a>
                         </div>
+                        <time class="card-date" datetime="">July, 9 2024</time>
                     </div>
+                </div>
             </article>
             <article class="card">
                 <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
@@ -124,18 +124,18 @@
                 </div>
             </article>
             <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
+                <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+                <div class="card-body">
+                    <span class="card-category">Book Name</span>
+                    <h2 class="card-title">WRITER</h2>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                    <div class="post">
+                        <div class="card-author">
+                            <a href=""><button class="btn">Read Book</button></a>
                         </div>
+                        <time class="card-date" datetime="">July, 9 2024</time>
                     </div>
+                </div>
             </article>
             <article class="card">
                 <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
@@ -152,46 +152,46 @@
                 </div>
             </article>
             <article class="card">
-                    <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
-                    <div class="card-body">
-                        <span class="card-category">Book Name</span>
-                        <h2 class="card-title">WRITER</h2>
-                        <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
-                        <div class="post">
-                            <div class="card-author">
-                                <a href=""><button class="btn">Read Book</button></a>
-                            </div>
-                            <time class="card-date" datetime="">July, 9 2024</time>
+                <img src="./assets/images/ဂျာနယ်ကျော်မမလေး-သူလိုလူ.jpg" alt="baking cake image" class="card-img">
+                <div class="card-body">
+                    <span class="card-category">Book Name</span>
+                    <h2 class="card-title">WRITER</h2>
+                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur </p>
+                    <div class="post">
+                        <div class="card-author">
+                            <a href=""><button class="btn">Read Book</button></a>
                         </div>
+                        <time class="card-date" datetime="">July, 9 2024</time>
                     </div>
+                </div>
             </article>
-    </section>
+        </section>
         
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <h3><i class="fa-solid fa-book"></i> Essential Library</h3>
-            <p>Providing the best resources for your knowledge journey.</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/khin.y.htet.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://www.instagram.com/khin.y.htet.923?igsh=ZXl0bml1dXV0OTE1"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@berryk88?_t=8qCiiksVFH5&_r=1"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
-                <li><a href="https://github.com/Berry8833/02-Advance-CSS-02-Challenge-Portfolio.git"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="mailto:berryk8833@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p><i class="fa-solid fa-book"></i> 2024 Essential Library. All rights reserved.</p>
-        </div>
-    </footer>
-    <script>
-        document.getElementById('logoutBtn').addEventListener('click',()=>{
-            localStorage.clear();
-            window.location.href='../../index.html';
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <h3><i class="fa-solid fa-book"></i> Essential Library</h3>
+                <p>Providing the best resources for your knowledge journey.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/khin.y.htet.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/khin.y.htet.923?igsh=ZXl0bml1dXV0OTE1"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@berryk88?_t=8qCiiksVFH5&_r=1"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                    <li><a href="https://github.com/Berry8833/02-Advance-CSS-02-Challenge-Portfolio.git"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="mailto:berryk8833@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p><i class="fa-solid fa-book"></i> 2024 Essential Library. All rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+            document.getElementById('logoutBtn').addEventListener('click',()=>{
+                localStorage.clear();
+                window.location.href='../../index.html';
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
@@ -200,5 +200,5 @@
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="../js/script.js"></script>
-</body>
+    </body>
 </html>

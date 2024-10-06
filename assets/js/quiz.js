@@ -1,39 +1,64 @@
 // Initial variables to keep track of quiz progress
 let currentQuestion = 0;
-let timeLeft = 36;
+let timeLeft = 20;
 let timer;
 let score = 0;
 let questions = [
     {
-        question: "Who is the write ",
-        options:  ["vv", 'dd','rfdfdf'],
-        answer: 'vv'
+      question: "ဘုရားဘယ်အရွယ်မှာတောထွက်တော်မူသနည်း။",
+      options:  ["၁၉", '၃၀','၂၉'],
+      answer: '၂၉'
     },
     {
-        question: "Whsdrgfvdvbo is the write ",
-        options:  ["vv", 'v','rfdfdf'],
-        answer: 'v'
+      question: "အနတ္တလက္ခဏသုတ်ဟောကြားသောနေ့",
+        options:  ["ဝါဆိုလပြည့်နေ့", 'ဝါဆိုလပြည့်ကျော် ၅ ရက်','ကဆုန်လပြည့်နေ့'],
+        answer: 'ဝါဆိုလပြည့်ကျော် ၅ ရက်'
     },
     {
-        question: "Whdfgbxcf o is the write ",
-        options:  ["vv", 'dd','drg'],
-        answer: 'drg'
-    },{
-        question: "Whdfbxvo is the write ",
-        options:  ["vv", 'dd','rfdfdf'],
-        answer: 'dd'
+      question: "ကမ္ဘာ့မှာနိုင်ငံအပေါင်းဘယ်လောက်ရှိသလဲ?",
+      options:  ["၁၉၃", '၁၅၃','၁၉၅'],
+      answer: '၁၉၅'
     },
     {
-        question: "Who is thdbfdbdxve write ",
-        options:  ["vv", 'dd','ddfdf'],
-        answer: 'ddfdf'
+      question: "သူလိုလူစာအုပ်ကိုမည်သူရေးသနည်း။",
+      options: [
+          "အကြည်တော်",
+          "မြသန်းတင့်",
+          "ဂျာနယ်ကျော်မမလေး",
+          "ရွှေဥဒေါင်း"
+      ],
+      answer: "ဂျာနယ်ကျော်မမလေး"
     },
     {
-        question: "Who is td vdrvxntbhe write ",
-        options:  ["vv", 'cc','rfdfdf'],
-        answer: 'cc'
+      question: "၂၀၁၈ world cup အားမည်သည့်နိုင်ငံမှ ရရှိခဲ့သနည်း။",
+      options: [
+          "France",
+          "Germany",
+          "Poland",
+          "Brazil"
+      ],
+      answer: "France"
+    },
+    {
+      question: "အချစ်သာအမှန်တရားဖြစ်ရင် ကျွန်တော်မှားနေတာကြာပြီ စာအုပ်ကို ဘယ်သူရေးသနည်း။",
+      options: ["ဂျူး" , "အောင်ချိမ့်", "အကြည်တော်", "မြသန်းတင့်"],
+      answer: "အကြည်တော်"
+    },
+    {
+      question: "ငရဲဆိုတာချိုနဲ့လာဗျို့ စာအုပ်ကို ဘယ်သူရေးသနည်း။",
+      options: ["ဦးနု" , "အောင်ချိမ့်", "အကြည်တော်", "သိုးဆောင်း"],
+      answer: "ဦးနု"
+    },
+    {
+      question: "ဒေါ်အောင်ဆန်းစုကြည်သည် နိုဘယ်ဆုကို ဘယ်နှစ်ခုနှစ်တွင် ရရှိခဲ့ပါသလဲ?",
+      options: ["၁၉၈၉", "၁၉၉၁", "၁၉၉၃", "၁၉၉၅"],
+      answer: "၁၉၉၁"
+    },
+    {
+      question: "ဆရာကြီးမင်းသုဝဏ်သည်မည်သည့်ဇာတိဖြစ်သနည်း?",
+      options:  ["ကွမ်းခြံကုန်းမြို့", 'ဟင်္သာတမြို့','ရန်ကုန်မြို့'],
+      answer: 'ကွမ်းခြံကုန်းမြို့'
     }
-
 ];
 
 // Function to load questions from the HTML file
@@ -148,7 +173,7 @@ function nextQuestion() {
   currentQuestion++;
 
   if (currentQuestion < questions.length) {
-    timeLeft = 36; // Reset the timer
+    timeLeft = 20; // Reset the timer
     displayQuestion(); // Show the next question
     startTimer(); // Start the timer again
     document.getElementById("feedback").textContent = "";
@@ -179,7 +204,7 @@ function showResult() {
 // Function to restart the quiz
 function testAgain() {
   currentQuestion = 0;
-  timeLeft = 36;
+  timeLeft = 20;
   score = 0;
   questions = shuffleArray(questions);
 

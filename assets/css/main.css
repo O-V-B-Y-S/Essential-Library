@@ -1,9 +1,9 @@
 :root {
-    --secondary: white;
-    --primary-color: rgb(5, 5, 5);
+    --secondary:  blue;
+    --primary-color: purple;
     --card-border-radius: 10px;
-    --card-title-color: orange;
-    --card-category-color: seagreen;
+    --card-title-color: #ffa500;
+    --card-category-color: gray;
   }
   .card-container {
     max-width: 1200px;
@@ -99,7 +99,7 @@
 @media (min-width: 1200px) {
     .card-container {
         grid-template-columns: repeat(5, 1fr);
-        margin: auto;
+        margin: 85px auto;
     }
     .card-img {
         height: 70px;
@@ -115,8 +115,3 @@
     }
 }
   
-  
-
-.mmm{
-    height: 900px;
-}

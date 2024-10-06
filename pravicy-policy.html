@@ -3,100 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .log {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-        
-        /* Modal content */
-        .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 300px;
-            text-align: center;
-            position: relative;
-        }
-        
-        /* Close button */
-        .icon-close {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        
-        /* Basic styles for input fields and button */
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-        }
-        
-        button {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    <title>Privacy-Policy</title>
 </head>
 <body>
-    <button class="btn-login">Login</button>
-
-     <!-- Login form section (modal) -->
-     <div class="log">
-        <div class="modal-content">
-            <span class="icon-close">&times;</span>
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <br>
-                <button type="submit">Login</button>
-            </form>
+    <header>
+        <div class="logo">
+            <img class="logo-radius" src="./assets/images/logo.png" alt="Library Logo">
+            <h1><i class="fa-solid fa-book"></i> Essential Library</h1>
         </div>
-    </div>
 
+        <button class="btn-login" id="logoutBtn">Logout</button>
+        <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
+    </header>
+
+    <!-- Sidebar Navigation (Initially Hidden) -->
+    <nav id="side-nav" class="side-nav">
+        <ul>
+            <li><a href="./main.html"><i class="fas fa-home"></i>Home</a></li>
+            <li>
+              <a href="#" onclick="showBookTypes()">
+                  <i class="fas fa-book"></i>Books
+              </a>
+              <ul id="book-types" class="book-types hidden">
+                  <li><a href="./assets/books-pages/dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
+                  <li><a href="./assets/books-pages/suta-ratha.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
+                  <li><a href="./assets/books-pages/english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
+                  <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
+                  <li><a href="./assets/books-pages/medicine.html"><i class="fa-solid fa-book-open-reader"></i>Medicine</a></li>
+              </ul>
+              </li>
+            <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
+            <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
+            <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
+            <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
+        </ul>
+        <button class="close-btn" onclick="toggleMenu()">Close</button>
+    </nav>
+
+    <footer>
+        <div class="footer-content">
+            <h3><i class="fa-solid fa-book"></i> Essential Library</h3>
+            <p>Providing the best resources for your knowledge journey.</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/khin.y.htet.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/khin.y.htet.923?igsh=ZXl0bml1dXV0OTE1"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@berryk88?_t=8qCiiksVFH5&_r=1"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                <li><a href="https://github.com/Berry8833/02-Advance-CSS-02-Challenge-Portfolio.git"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                <li><a href="mailto:berryk8833@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p><i class="fa-solid fa-book"></i> 2024 Essential Library. All rights reserved.</p>
+        </div>
+    </footer>
     <script>
-        // Show modal when login button is clicked
-document.querySelector('.btn-login').addEventListener('click', () => {
-    document.querySelector('.log').style.display = 'flex';  // Show the modal with flexbox
-});
-
-// Hide modal when close icon is clicked
-document.querySelector('.icon-close').addEventListener('click', () => {
-    document.querySelector('.log').style.display = 'none';  // Hide the modal
-});
-
-// Optionally, hide modal when user clicks outside the modal content
-window.addEventListener('click', (event) => {
-    const modal = document.querySelector('.log');
-    if (event.target === modal) {
-        modal.style.display = 'none';
-    }
-});
+        document.getElementById('logoutBtn').addEventListener('click',()=>{
+            localStorage.clear();
+            window.location.href='./index.html';
+        });
     </script>
 </body>
 </html>

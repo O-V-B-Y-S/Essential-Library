@@ -10,7 +10,7 @@
     --card-title-color: rgb(23, 148, 19);
     --card-category-color: seagreen;
     --login-signup-color: #162938;
-    --first-color: #d1e7dd;
+    --first-color: whitesmoke;
     --second-color: #ced4da;
     --three-color: #9f9dba;
     --four-color: #6e4c6c;
@@ -32,7 +32,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
     flex-direction: column;
-    background-color: var(--ten-color);
+    background-color: var(--first-color);
 }
 .log{
     display: flex;
@@ -392,13 +392,13 @@ header {
 
 .feature {
     color: var(--first-color);
-    background-color: var(--nine-color);
+    background-color: var(--five-color);
     font-size: larger;
     text-align: center;
     margin: 50px 0;
     padding: 2px;
     border-radius: 20px;
-    border-bottom: solid 2px var(--first);
+    border-bottom: 3px solid var(--four);
 }
 /* Footer */
 footer {

@@ -1,67 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy-Policy</title>
-</head>
-<body>
-    <header>
-        <div class="logo">
-            <img class="logo-radius" src="./assets/images/logo.png" alt="Library Logo">
-            <h1><i class="fa-solid fa-book"></i> Essential Library</h1>
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Privacy-Policy</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/quiz.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+        <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="./assets/images/logo1.png">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-        <button class="btn-login" id="logoutBtn">Logout</button>
-        <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
-    </header>
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                display: flex;
+                flex-direction: column;
+                background-color: var(--first-color);
+            }
+            .log{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 600px;
+                background-position: center;
+            }
+            header {
+                background-image: url('./assets/images/Slay.jpeg'); 
+                background-size: cover;
+                background-position: center;
+                color: var(--nine-color);
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-    <!-- Sidebar Navigation (Initially Hidden) -->
-    <nav id="side-nav" class="side-nav">
-        <ul>
-            <li><a href="./main.html"><i class="fas fa-home"></i>Home</a></li>
-            <li>
-              <a href="#" onclick="showBookTypes()">
-                  <i class="fas fa-book"></i>Books
-              </a>
-              <ul id="book-types" class="book-types hidden">
-                  <li><a href="./assets/books-pages/dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
-                  <li><a href="./assets/books-pages/suta-ratha.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
-                  <li><a href="./assets/books-pages/english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
-                  <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
-                  <li><a href="./assets/books-pages/medicine.html"><i class="fa-solid fa-book-open-reader"></i>Medicine</a></li>
-              </ul>
-              </li>
-            <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
-            <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
-            <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
-            <li><a href="#"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
-        </ul>
-        <button class="close-btn" onclick="toggleMenu()">Close</button>
-    </nav>
+            .logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font-size: 36px;
+                font-weight: bold;
+                color: var(--first-color);
+            }
 
-    <footer>
-        <div class="footer-content">
-            <h3><i class="fa-solid fa-book"></i> Essential Library</h3>
-            <p>Providing the best resources for your knowledge journey.</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/khin.y.htet.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                <li><a href="https://www.instagram.com/khin.y.htet.923?igsh=ZXl0bml1dXV0OTE1"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://www.tiktok.com/@berryk88?_t=8qCiiksVFH5&_r=1"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
-                <li><a href="https://github.com/Berry8833/02-Advance-CSS-02-Challenge-Portfolio.git"><i class="fa-brands fa-github"></i> GitHub</a></li>
-                <li><a href="mailto:berryk8833@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+            .logo img {
+                width: 60px;
+                border-radius: 50%;
+            }
+            .btn-login {
+                padding: 5px 20px;
+                border-radius: 6px;
+                background-color: var(--nine-color);
+                color: var(--first-color);
+            }
+
+            .btn-login:hover {
+                background-color: var(--first-color); 
+                color: var(--nine-color);
+            }
+
+            .toggle-btn {
+                padding: 10px;
+                color: var(--first-color);
+                background-color: var(--nine-color);
+                border-radius: 6px;
+            }
+
+            /* Style for the side navigation bar */
+            .side-nav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background-color: var(--second-color);
+                color: var(--eight-color);
+                overflow-x: hidden;
+                transition: 0.4s ease; 
+                padding-top: 60px;
+                z-index: 1000; 
+                box-shadow: -3px 0 8px var(--ten-color); 
+            }
+
+            /* Opened sidebar */
+            .side-nav.side-nav-open {
+                width: 150px;
+            }
+
+            /* Menu Items */
+            .side-nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            .side-nav ul li {
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .side-nav ul li a {
+                display: block;
+                padding: 10px;
+                font-size: 1.2rem;
+                color: var(--nine-color);
+                text-decoration: none;
+                transition: background-color 0.3s ease, color 0.3s ease;
+            }
+
+            /* Hover effect for menu items */
+            .side-nav ul li a:hover {
+                background-color: var(--first-color); 
+                color: var(--four-color);
+                border-radius: 5px;
+            }
+
+            .side-nav ul li a i {
+                margin-right: 10px; 
+                font-size: 1.2rem;  
+                vertical-align: middle; 
+            }
+            /* Book types list hidden */
+            .hidden {
+                display: none;
+            }
+            /* Close button styling */
+            .close-btn {
+                bottom: 20px;
+                right: 10px;
+                padding: 10px;
+                background-color: var(--ten-color);
+                color: var(--six-color);
+                border: none;
+                font-size: 1.2rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                width: 100%;
+            }
+
+            .close-btn:hover {
+                background-color: red;
+                color: var(--first-color);
+            }
+
+            /* Responsive Styling */
+            @media (max-width: 768px) {
+                header {
+                    flex-direction: column;
+                    align-items: center; 
+                }
+
+                .logo {
+                    font-size: 28px;
+                    text-align: center; 
+                }
+
+                .logo img {
+                    width: 50px;
+                }
+
+                .search-bar {
+                    width: 100%; 
+                    display: flex;
+                    justify-content: center; 
+                    margin-top: 10px;
+                }
+
+                .search-bar input {
+                    width: 60%; 
+                    max-width: 300px; 
+                }
+
+                .toggle-btn {
+                    margin-top: 10px;
+                    padding: 8px;
+                    align-self: center; 
+                }
+
+                .side-nav.side-nav-open {
+                    width: 100%;
+                }
+
+                .side-nav ul li a {
+                    font-size: 1rem;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .logo {
+                    font-size: 24px;
+                    text-align: center; 
+                }
+
+                .search-bar {
+                    margin-top: 10px;
+                }
+
+                .search-bar input {
+                    width: 70%; 
+                    max-width: 250px; 
+                }
+
+                .toggle-btn {
+                    padding: 6px;
+                    align-self: center; 
+                    margin-top: 10px;
+                }
+
+                .search-bar button {
+                    padding: 6px 8px;
+                }
+            }
+            section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+            }
+
+            h2 {
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img class="logo-radius" src="./assets/images/logo.png" alt="Library Logo">
+                <h1><i class="fa-solid fa-book"></i> Essential Library</h1>
+            </div>
+
+            <button class="toggle-btn" onclick="toggleMenu()">☰ MENU</button>
+        </header>
+
+        <!-- Sidebar Navigation (Initially Hidden) -->
+        <nav id="side-nav" class="side-nav">
+            <ul>
+                <li><a href="./main.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
+                <li><a href="./pravicy-policy.html"><i class="fas fa-shield-alt"></i>Privacy Policy</a></li>
             </ul>
-        </div>
-        <div class="footer-bottom">
-            <p><i class="fa-solid fa-book"></i> 2024 Essential Library. All rights reserved.</p>
-        </div>
-    </footer>
-    <script>
-        document.getElementById('logoutBtn').addEventListener('click',()=>{
-            localStorage.clear();
-            window.location.href='./index.html';
-        });
-    </script>
-</body>
+            <button class="close-btn" onclick="toggleMenu()">Close</button>
+        </nav>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to Essential Library privacy policy. We value your privacy and strive to protect your personal information.</p>
+        </section>
+
+        <section id="data-collection">
+            <h2>Cann't Login</h2>
+            <p>Our page cannot read register or login. We show sample books.</p>
+        </section>
+
+        <section id="data-use">
+            <h2>To Get Login</h2>
+            <p>Our pages can read Buddha Literature,English,Medicine,Poem and Suta-Ratha.</p>
+        </section>
+
+        <section id="user-rights">
+            <h2>User Rights</h2>
+            <p>You have the right to access, correct, or delete your personal information. Contact us for any privacy concerns.</p>
+        </section>
+
+        <section id="terms">
+            <h2>Terms and Conditions</h2>
+            <p>By using our services, you agree to the following terms and conditions:</p>
+            <ul>
+                <li>Our library is freely to use and you can share this.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <h3><i class="fa-solid fa-book"></i> Essential Library</h3>
+                <p>Providing the best resources for your knowledge journey.</p>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/khin.y.htet.92?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/khin.y.htet.923?igsh=ZXl0bml1dXV0OTE1"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="https://www.tiktok.com/@berryk88?_t=8qCiiksVFH5&_r=1"><i class="fa-brands fa-tiktok"></i> TikTok</a></li>
+                    <li><a href="https://github.com/Berry8833/02-Advance-CSS-02-Challenge-Portfolio.git"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="mailto:berryk8833@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p><i class="fa-solid fa-book"></i> 2024 Essential Library. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="../js/date.js"></script>
+    </body>
 </html>

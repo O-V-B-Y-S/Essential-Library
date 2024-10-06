@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>main</title>
-        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
         <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="./assets/images/logo1.png">
         <link rel="stylesheet" href="./assets/css/style.css">
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/quiz.css">
@@ -29,19 +30,19 @@
         <!-- Sidebar Navigation (Initially Hidden) -->
         <nav id="side-nav" class="side-nav">
             <ul>
-                <li><a href="./main.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="../../main.html"><i class="fas fa-home"></i>Home</a></li>
                 <li>
-                    <a href="#" onclick="showBookTypes()">
-                        <i class="fas fa-book"></i>Books
-                    </a>
-                    <ul id="book-types" class="hidden">
-                        <li><a href="./assets/books-pages/dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
-                        <li><a href="./assets/books-pages/suta-ratha.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
-                        <li><a href="./assets/books-pages/english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
-                        <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
-                        <li><a href="./assets/books-pages/medicine.html"><i class="fa-solid fa-book-open-reader"></i>Medicine</a></li>
-                    </ul>
-                </li>           
+                  <a href="#" onclick="showBookTypes()">
+                      <i class="fas fa-book"></i>Books
+                  </a>
+                  <ul id="book-types" class="book-types hidden">
+                      <li><a href="./assets/books-pages/dhammma.html"><i class="fa-solid fa-book-open-reader"></i>Buddha Literature</a></li>
+                      <li><a href="./assets/books-pages/suta-ratha.html"><i class="fa-solid fa-book-open"></i></i>Suta and Ratha</a></li>
+                      <li><a href="./assets/books-pages/english.html"><i class="fa-solid fa-book-open"></i></i>English</a></li>
+                      <li><a href="./assets/books-pages/poem.html"><i class="fa-solid fa-book-open-reader"></i>Poem</a></li>
+                      <li><a href="./assets/books-pages/medicine.html"><i class="fa-solid fa-book-open-reader"></i>Medicine</a></li>
+                  </ul>
+                  </li>
                 <li><a href="#"><i class="fas fa-plus-circle"></i>Add News</a></li>
                 <li><a href="#"><i class="fas fa-phone-alt"></i>Contact</a></li>
                 <li><a href="#"><i class="fas fa-info-circle"></i>About</a></li>
@@ -49,6 +50,7 @@
             </ul>
             <button class="close-btn" onclick="toggleMenu()">Close</button>
         </nav>
+        
         <div class="property">
             <section class="slideshow" style="height: 420px;">
                 <div id="error-message" class="error-message" style="display: none; color: red; text-align: center;"></div>
@@ -241,6 +243,8 @@
                 window.location.href='./index.html';
             });
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/dayjs.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

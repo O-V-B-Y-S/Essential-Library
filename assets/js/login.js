@@ -41,9 +41,9 @@ signUp.addEventListener('click', function(event) {
     localStorage.setItem("Userpassword", password);
     localStorage.setItem("Useremail", email);
     localStorage.setItem("UserName", userName);
-    email = document.getElementById('signupEmail').value=" ";
+    email = document.getElementById('signupEmail').value="";
     password = document.getElementById('signupPassword').value="";
-    userName = document.getElementById('signupUsername').value=" " ;
+    userName = document.getElementById('signupUsername').value="" ;
     alert("You're Successfully siginup,Please login and watch the page")
     // document.getElementById('message').textContent = 'Sign Up Successful!';
     wrapper.classList.remove('active'); 
@@ -59,9 +59,7 @@ signIn.addEventListener('click', function(event) {
     const storedPassword = localStorage.getItem("Userpassword");
     const storedEmail = localStorage.getItem("Useremail");
     if (
-        storedPassword &&
         storedPassword === password &&
-        storedEmail &&
         storedEmail === email
          ) {
             alert('Login Successfully!')
@@ -69,8 +67,18 @@ signIn.addEventListener('click', function(event) {
             password = document.getElementById('signinPassword').value='';
             // document.getElementById('message').textContent = 'Sign In Successful!';
             window.location.href='./main.html'
-    } else {
+    } else if(
+            storedPassword !== password &&
+            storedEmail !== email
+        ){
+        alert("You don't have account,Please signup");
+        email = document.getElementById('signinEmail').value='';
+        password = document.getElementById('signinPassword').value='';
+    }
+    else{
         alert('Invalid username or password!');
+        email = document.getElementById('signinEmail').value='';
+        password = document.getElementById('signinPassword').value='';
     }
     document.getElementById('signinForm').reset();
 });

@@ -196,99 +196,33 @@ header {
     color: var(--first-color);
 }
 
-/* Responsive Styling */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center; 
-    }
 
-    .logo {
-        font-size: 28px;
-        text-align: center; 
-    }
-
-    .logo img {
-        width: 50px;
-    }
-
-    .search-bar {
-        width: 100%; 
-        display: flex;
-        justify-content: center; 
-        margin-top: 10px;
-    }
-
-    .search-bar input {
-        width: 60%; 
-        max-width: 300px; 
-    }
-
-    .toggle-btn {
-        margin-top: 10px;
-        padding: 8px;
-        align-self: center; 
-    }
-
-    .side-nav.side-nav-open {
-        width: 100%;
-    }
-
-    .side-nav ul li a {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        font-size: 24px;
-        text-align: center; 
-    }
-
-    .search-bar {
-        margin-top: 10px;
-    }
-
-    .search-bar input {
-        width: 70%; 
-        max-width: 250px; 
-    }
-
-    .toggle-btn {
-        padding: 6px;
-        align-self: center; 
-        margin-top: 10px;
-    }
-
-    .search-bar button {
-        padding: 6px 8px;
-    }
-}
 
 .property {
     width: 100%;
-    margin: auto;
+    margin: 10px auto;
+    padding-top: 18px;
 }
 .slideshow {
     background: #262626;
     border-radius: 4px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     position: relative;
 }
 .slideshow-item {
     position: absolute;
-    /* top: 0; */
+    top: 10px;
     /* bottom: 0; */
-    padding: 10px;
+    padding: 13px;
     left: 0;
     right: 0;
     opacity: 0;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    /* -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; */
 }
 .slideshow-item img {
-    width: 400px;
-    height: 400px;
+    width: 700px;
+    height: 500px;
     display: block;
     margin: auto;
 }
@@ -301,17 +235,11 @@ header {
     background: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%206%2016%22%20width%3D%226%22%20height%3D%2216%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22m5%201-4%207%204%207%22%20fill%3D%22none%22%20stroke-width%3D%22.8%22%20opacity%3D%22.3%22%20stroke%3D%22%23000%22%20stroke-linecap%3D%22square%22%2F%3E%3Cpath%20d%3D%22m5%201-4%207%204%207%22%20fill%3D%22none%22%20stroke-width%3D%22.5%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22square%22%2F%3E%3C%2Fsvg%3E%0A") no-repeat center/30px;
   }
   .arrow-next {
-    right: 0;
+    right: 11px;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
 }
-.progress {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: var(--nine-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 /* .play {
     display: inline-block;
     position: absolute;
@@ -437,6 +365,99 @@ header {
     opacity: 0;
     -webkit-animation: none;
             animation: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .logo {
+        font-size: 28px;
+        text-align: center; 
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    .search-bar {
+        width: 100%; 
+        display: flex;
+        justify-content: center; 
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 60%; 
+        max-width: 300px;
+    }
+
+    .toggle-btn {
+        margin-top: 10px;
+        padding: 8px;
+        align-self: center; 
+    }
+
+    .side-nav.side-nav-open {
+        width: 100%;
+    }
+
+    .side-nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+        text-align: center; 
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        width: 70%; 
+        max-width: 250px; 
+    }
+
+    .toggle-btn {
+        padding: 6px;
+        align-self: center; 
+        margin-top: 10px;
+    }
+
+    .search-bar button {
+        padding: 6px 8px;
+    }
+    .property {
+        width: 100%;
+        margin: 12px auto;
+        padding-top: 10px;
+    }
+    .slideshow-item {
+        position: absolute;
+        /* top: 0; */
+        /* bottom: 0; */
+        padding: 13px;
+        left: 2px;
+        right: 2px;
+        opacity: 0;
+        /* -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; */
+    }
+    .slideshow-item img {
+        width: 330px;
+        height: 500px;
+        display: block;
+        margin: 12px auto;
+        /* padding-bottom: 8px; */
+    }
+
 }
 
 /* Footer */

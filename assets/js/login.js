@@ -59,7 +59,9 @@ signIn.addEventListener('click', function(event) {
     const storedPassword = localStorage.getItem("Userpassword");
     const storedEmail = localStorage.getItem("Useremail");
     if (
+        storedPassword &&
         storedPassword === password &&
+        storedEmail &&
         storedEmail === email
          ) {
             alert('Login Successfully!')
@@ -76,7 +78,7 @@ signIn.addEventListener('click', function(event) {
         password = document.getElementById('signinPassword').value='';
     }
     else{
-        alert('Invalid username or password!');
+        alert("Invalid username or password!");
         email = document.getElementById('signinEmail').value='';
         password = document.getElementById('signinPassword').value='';
     }

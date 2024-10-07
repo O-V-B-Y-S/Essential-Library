@@ -8,7 +8,6 @@
     --primary-color:rgb(12, 12, 12);
     --card-border-redius: 7px;
     --card-title-color: rgb(23, 148, 19);
-    --card-category-color: seagreen;
     --login-signup-color: #162938;
     --first-color: whitesmoke;
     --second-color: #ced4da;
@@ -208,25 +207,6 @@ header {
         font-size: 24px;
         text-align: center; 
     }
-
-    .search-bar {
-        margin-top: 10px;
-    }
-
-    .search-bar input {
-        width: 70%; 
-        max-width: 250px; 
-    }
-
-    .toggle-btn {
-        padding: 6px;
-        align-self: center; 
-        margin-top: 10px;
-    }
-
-    .search-bar button {
-        padding: 6px 8px;
-    }
 }
 
 .property {
@@ -236,6 +216,7 @@ header {
     border-radius: 20%;
 }
 .slideshow {
+    height: 420px;
     background: #262626;
     border-radius: 4px;
     margin-bottom: 20px;
@@ -490,6 +471,29 @@ footer {
     transform: scale(0);
     transition: height .2s ease;
 }
+@media (min-width: 300px){
+    .wrapper{
+        height: 490px;
+    }
+    .slideshow{
+        height: 230px;
+    }
+    .slideshow-item img {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (min-width: 700px){
+    .slideshow{
+        height: 430px;
+    }
+    .slideshow-item img {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
 .wrapper.active{
     height: 520px;
 }

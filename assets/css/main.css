@@ -3,7 +3,7 @@
     --primary-color: purple;
     --card-border-radius: 10px;
     --card-title-color: #ffa500;
-    --card-category-color: gray;
+    --card-category-color: grey;
   }
   .card-container {
     max-width: 1200px;

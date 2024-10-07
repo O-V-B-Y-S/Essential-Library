@@ -1,14 +1,11 @@
 :root {
-    --primary-color:#fff;
     --secondary-color:#000;
     --first:#d1e7dd;
     --second:#055160;
     --third:#cdcde6;
     --four:#b4eed4;
-    --primary-color:rgb(12, 12, 12);
     --card-border-redius: 7px;
     --card-title-color: rgb(23, 148, 19);
-    --card-category-color: seagreen;
     --login-signup-color: #162938;
     --first-color: #d1e7dd;
     --second-color: #ced4da;
@@ -31,7 +28,7 @@
 }
 
 #start-container{
-    background-color: var(--card-category-color);
+    background-color: var(--card-title-color);
     font-size: 2rem;
     padding: 5% 15%;
     border-radius: 10px;

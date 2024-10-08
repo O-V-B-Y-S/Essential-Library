@@ -1,9 +1,9 @@
 :root {
-    --secondary:  blue;
+    --secondary:  rgb(2, 2, 77);
     --primary-color: purple;
     --card-border-radius: 10px;
     --card-title-color: #ffa500;
-    --card-category-color: grey;
+    --card-category-color: rgb(173, 172, 172);
   }
   .card-container {
     max-width: 1200px;
